@@ -1,0 +1,239 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&display=swap');
+
+/* Color Variables */
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --blue-primary: #368FFE;
+    --dark-blue: #0F172A;
+    --navy-blue: #2C3B8E;
+    --light-grayish-blue: #E0F2FE; /* Warna biru muda cerah sesuai Figma terakhir */
+    --gray: #767676;
+    --light-blue-accent: #C6F5FF;
+    --light-gray: #D9D9D9;
+    --yellow-accent: #FFBB00;
+    --darker-blue: #0059B2;
+    --dark-greenish-blue: #2B3739;
+    --lightest-blue: #C3E4F3;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Familjen Grotesk', sans-serif;
+    line-height: 1.6;
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+/* Penyesuaian untuk mengatasi navbar fixed (umum untuk semua halaman) */
+main {
+    padding-top: 80px; /* Sesuaikan dengan tinggi navbar Anda */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--white);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--light-gray);
+    position: fixed; /* Membuat navbar fixed (terkunci di atas) */
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Memastikan navbar selalu di atas elemen lain */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px; /* Adjust as needed */
+}
+
+.navbar nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 30px;
+}
+
+.navbar nav ul li a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: var(--blue-primary);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 50px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Mengatur lebar kolom footer untuk desktop */
+.footer-left {
+    flex: 1; /* Memberikan bobot fleksibel yang sama */
+    min-width: 180px; /* Pastikan tidak terlalu kecil */
+}
+.footer-middle {
+    flex: 1; /* Memberikan bobot fleksibel yang sama */
+    min-width: 180px; /* Pastikan tidak terlalu kecil */
+}
+.footer-right {
+    flex: 2; /* Memberikan bobot fleksibel yang lebih besar untuk kolom peta */
+    min-width: 350px; /* Pastikan kolom peta memiliki lebar minimum yang cukup */
+}
+
+.footer-left img {
+    height: 50px;
+}
+
+.footer-middle h4, .footer-right h4 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: var(--blue-primary);
+}
+
+.footer-middle ul {
+    list-style: none;
+}
+
+.footer-middle ul li a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-middle ul li a:hover {
+    color: var(--blue-primary);
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+/* Peta di Footer */
+.footer-right .map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 85%; /* Ditingkatkan untuk membuat peta lebih tinggi */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.footer-right .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Global Responsiveness (Untuk elemen umum: navbar, footer, main) */
+@media (max-width: 992px) {
+    main {
+        padding-top: 80px;
+    }
+
+    /* Penyesuaian lebar kolom footer di tablet */
+    footer .container {
+        flex-direction: column; /* Mengubah kembali ke column di tablet */
+        align-items: center; /* Menengahkan item-item footer */
+    }
+    .footer-left, .footer-middle, .footer-right {
+        flex: unset; /* Menghapus flex default dari desktop agar bisa diatur di mobile */
+        width: 100%; /* Membuat setiap kolom mengambil lebar penuh */
+        max-width: 400px; /* Batasi lebar agar tidak terlalu lebar di tablet besar */
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 60px; /* Sesuaikan jika tinggi navbar berubah di breakpoint ini */
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navbar nav {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-left: 0;
+    }
+    .navbar nav ul li {
+        margin-left: 0;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .footer-middle ul {
+        margin: 0 auto;
+        padding-left: 0;
+    }
+
+    .footer-left, .footer-middle, .footer-right {
+        margin-bottom: 20px;
+    }
+
+    /* Penyesuaian untuk peta di layar kecil */
+    .footer-right .map-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 75%;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding-top: 50px; /* Sesuaikan jika tinggi navbar berubah di breakpoint ini */
+    }
+
+    .footer-right .map-container {
+        padding-bottom: 85%;
+    }
+}

@@ -1,0 +1,310 @@
+/* YIC Page Specific Styles */
+
+/* YIC Hero Section */
+.yic-hero-section {
+    background-color: var(--light-grayish-blue); /* Latar belakang sama dengan hero index.html */
+    padding: 0px 0; /* Sesuaikan dengan padding 0px 0 agar gambar menempel */
+    display: flex;
+    align-items: center;
+}
+.yic-hero-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.yic-hero-content { /* Kelas baru untuk konten teks YIC hero */
+    flex: 1;
+    min-width: 400px;
+    margin-right: 40px;
+    padding: 80px 0; /* Tambahkan padding vertikal untuk konten hero YIC */
+}
+.yic-hero-content h1 {
+    font-size: 3.5em;
+    color: var(--dark-blue);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.yic-hero-content p { /* Tambahan gaya untuk paragraf di hero YIC */
+    font-size: 1.2em;
+    color: var(--gray);
+    max-width: 800px;
+}
+/* hero-image class is used from common.css/index.css */
+
+/* YIC Categories Section */
+.yic-categories-section {
+    padding: 80px 0; /* Padding atas/bawah */
+    text-align: center;
+    background-color: var(--white);
+}
+.yic-categories-section h2 { /* Judul "CATEGORY OF COMPETITION" */
+    font-size: 2.8em;
+    color: var(--dark-blue);
+    margin-bottom: 50px;
+    letter-spacing: 2px; /* Menambah jarak antar huruf */
+    text-transform: uppercase; /* Membuat huruf kapital */
+}
+
+.category-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Jarak antar card */
+    max-width: 1000px; /* Batasi lebar wrapper */
+    margin: 0 auto; /* Tengah wrapper */
+}
+
+.category-card {
+    /* Menggunakan warna card sesuai contoh di gambar */
+    /* Urutan warna dari Figma (dari kiri ke kanan, baris atas lalu bawah): */
+    /* App Development: E5CCF7 (Light Purple) */
+    /* Game Development: D8DAE6 (Light Blue-Gray) */
+    /* UI/UX Design: E8F7C6 (Light Yellow-Green) */
+    /* IoT: C4E8C6 (Light Green) */
+    /* AI/ML: D4CCE8 (Light Purple-Gray) */
+    
+    background-color: var(--lightest-blue); /* Default, akan ditimpa dengan inline style atau class unik jika banyak warna */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Lebar card */
+    height: 180px; /* Tinggi card agar seragam */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Pusatkan konten vertikal */
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Menunjukkan bahwa card bisa diklik */
+}
+
+/* Contoh penyesuaian warna spesifik untuk setiap card (jika diperlukan) */
+/* Anda bisa tambahkan class unik di HTML dan style di sini */
+/* .category-card.app-dev { background-color: #E5CCF7; } */
+/* .category-card.game-dev { background-color: #D8DAE6; } */
+/* dst... */
+
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.category-card img { /* Icon SVG dalam card */
+    height: 80px; /* Ukuran icon disesuaikan agar lebih kecil */
+    width: 80px;
+    margin-bottom: 10px; /* Jarak antar ikon dan teks */
+}
+
+.category-card h3 { /* Judul kategori dalam card */
+    font-size: 1.3em; /* Ukuran judul card kategori */
+    color: var(--navy-blue);
+    line-height: 1.2; /* Menyesuaikan line height untuk teks multi-baris */
+}
+
+/* YIC Explanation Section */
+.yic-explanation-section {
+    background-color: var(--light-grayish-blue); /* Latar belakang sama dengan hero YIC */
+    padding: 80px 0;
+    color: var(--dark-blue);
+    text-align: left;
+}
+
+.yic-explanation-section .container {
+    /* DIUBAH: Membuat blok penjelasan menumpuk vertikal (satu kolom) di semua ukuran layar */
+    display: block; /* Mengembalikan ke perilaku blok normal */
+    max-width: 800px; /* Batasi lebar container agar teks tidak terlalu panjang di desktop */
+    margin: 0 auto; /* Pusatkan container */
+}
+
+.explanation-block {
+    /* DIUBAH: Memastikan setiap blok penjelasan mengambil lebar penuh */
+    width: 100%;
+    margin-bottom: 40px; /* Jarak antar blok yang menumpuk */
+    text-align: left; /* Pastikan teks tetap rata kiri di dalam blok */
+}
+
+.explanation-block:last-child {
+    margin-bottom: 0; /* Hapus margin bawah pada blok terakhir */
+}
+
+.explanation-block h4 { /* Judul kategori kecil di atas "Apa itu?" */
+    font-size: 1.5em;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+    text-align: center; /* Judul kategori di tengah */
+}
+
+.explanation-block h3 {
+    font-size: 1.8em;
+    color: var(--blue-primary);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 5px;
+}
+
+.explanation-block p {
+    margin-bottom: 15px; /* Sedikit lebih banyak jarak setelah paragraf */
+    color: var(--gray);
+}
+
+.explanation-block ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px; /* Jarak setelah list */
+}
+
+.explanation-block ul li {
+    margin-bottom: 8px;
+    color: var(--dark-blue);
+    position: relative;
+    padding-left: 20px;
+}
+
+.explanation-block ul li::before {
+    content: '•';
+    color: var(--blue-primary);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* --- Akhir YIC Page Specific Styles --- */
+
+
+/* Global Responsiveness (Untuk elemen umum: navbar, footer, main) */
+@media (max-width: 992px) {
+    main {
+        padding-top: 80px;
+    }
+
+    /* Penyesuaian lebar kolom footer di tablet */
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-left, .footer-middle, .footer-right {
+        flex: unset;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* YIC Page Responsiveness */
+    .yic-hero-section .container {
+        flex-direction: column; /* Menumpuk di tablet */
+        text-align: center;
+        padding-top: 200px;
+    }
+    .yic-hero-content {
+        margin-right: 0;
+        margin-bottom: 40px; /* Jarak bawah saat menumpuk */
+        padding: 80px 0; /* Kurangi padding vertikal di tablet */
+    }
+    .yic-hero-content h1 {
+        font-size: 3em;
+    }
+    .yic-hero-content p {
+        font-size: 1.1em;
+        max-width: 80%; /* Batasi lebar teks di tengah */
+        margin: 0 auto;
+    }
+    
+    .yic-categories-section h2 {
+        font-size: 2.5em;
+    }
+    .category-card {
+        width: 90%; /* Card kategori melebar di tablet */
+        max-width: 350px;
+        height: auto; /* Biarkan tinggi menyesuaikan konten */
+    }
+    .yic-explanation-section .container {
+        max-width: 90%; /* Blok penjelasan melebar di tablet */
+    }
+    .explanation-block {
+        margin-bottom: 30px; /* Sesuaikan jarak antar blok */
+        padding: 0 10px; /* Sedikit padding horizontal jika perlu */
+    }
+    .explanation-block h4 {
+        text-align: left; /* Kembali ke kiri di tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-top: 60px;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navbar nav {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-left: 0;
+    }
+    .navbar nav ul li {
+        margin-left: 0;
+    }
+
+    .yic-hero-content h1 {
+        font-size: 2.5em;
+    }
+    .yic-hero-content p {
+        font-size: 1em;
+    }
+    .yic-hero-content {
+        padding: 30px 0; /* Kurangi padding lagi di mobile */
+    }
+    .yic-categories-section h2 {
+        font-size: 2.2em;
+    }
+    .category-card {
+        width: 90%;
+    }
+    .explanation-block h4 {
+        font-size: 1.4em; /* Ukuran judul kategori di penjelasan */
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding-top: 50px;
+    }
+
+    .yic-hero-content h1 {
+        font-size: 2em;
+    }
+    .yic-hero-content p {
+        font-size: 0.9em;
+    }
+    .yic-categories-section h2 {
+        font-size: 1.8em;
+    }
+    .category-card img {
+        height: 80px;
+        width: 80px;
+    }
+    .category-card h3 {
+        font-size: 1.2em;
+    }
+    .explanation-block h4 {
+        font-size: 1.2em;
+    }
+    .explanation-block h3 {
+        font-size: 1.4em;
+    }
+    .explanation-block p, .explanation-block ul li {
+        font-size: 0.85em;
+    }
+}
