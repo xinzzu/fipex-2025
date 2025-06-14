@@ -52,31 +52,31 @@
                 <h2>CATEGORY OF COMPETITION</h2>
                 <div class="category-cards-wrapper">
                     <!-- Card Kategori 1: App Development (Web/Mobile) -->
-                    <div class="category-card">
+                    <div class="category-card" data-target="app">
                         <!-- Ganti src dengan path SVG ikon kategori yang sesuai -->
                         <img src="img/yic/web.png" alt="App Development Icon">
                         <h3>App Development<br>(Web/Mobile)</h3>
                     </div>
                     <!-- Card Kategori 2: Game Development -->
-                    <div class="category-card">
+                    <div class="category-card" data-target="game">
                         <!-- Ganti src dengan path SVG ikon kategori yang sesuai -->
                         <img src="img/yic/game.png" alt="Game Development Icon">
                         <h3>Game<br>Development</h3>
                     </div>
                     <!-- Card Kategori 3: UI/UX Design -->
-                    <div class="category-card">
+                    <div class="category-card"data-target="ui/ux">
                         <!-- Ganti src dengan path SVG ikon kategori yang sesuai -->
                         <img src="img/yic/uiux.png" alt="UI/UX Design Icon">
                         <h3>UI/UX<br>Design</h3>
                     </div>
                     <!-- Card Kategori 4: Internet of Thing (IoT) -->
-                    <div class="category-card">
+                    <div class="category-card"data-target="iot">
                         <!-- Ganti src dengan path SVG ikon kategori yang sesuai -->
                         <img src="img/yic/iot.png" alt="Internet of Thing Icon">
                         <h3>Internet of Thing<br>(IoT)</h3>
                     </div>
                     <!-- Card Kategori 5: Artificial Intelligence & Machine Learning -->
-                    <div class="category-card">
+                    <div class="category-card"data-target="ai">
                         <!-- Ganti src dengan path SVG ikon kategori yang sesuai -->
                         <img src="img/yic/ai.png" alt="AI/ML Icon">
                         <h3>Artificial Intelligence &<br>Machine Learning</h3>
@@ -89,58 +89,91 @@
         <section class="yic-explanation-section">
             <div class="container">
                 <!-- Penjelasan untuk App Development (Web/Mobile) -->
-                <div class="explanation-block">
+                <div class="explanation-block" id="app">
                     <h4>App Development (Web/Mobile)</h4>
                     <h3>Apa itu?</h3>
-                    <p>Ini tentang bikin aplikasi atau website yang bisa kamu pakai di HP atau komputer. Mikirin aplikasi yang bisa bantuin kamu belajar, ngingetin jadwal, atau bahkan website buat jualan online? Nah, di sini tempatnya kamu wujudkan ide itu jadi nyata!</p>
-                    <h3>Kenapa Ikut Bidang Ini?</h3>
-                    <p>Biar kamu bisa pecahin masalah pakai teknologi, belajar cara bikin program keren, dan ngerti banget apa maunya pengguna. Siapa tahu, karyamu bisa jadi aplikasi hits selanjutnya!</p>
-                    <h3>Apa yang Dikerjain?</h3>
-                    <p>Kamu bakal bikin aplikasi yang bener-bener bisa dipakai. Misalnya, aplikasi Android/iOS yang lucu dan bermanfaat, atau website yang interaktif banget buat komunitas sekolah. Intinya, aplikasimu harus punya tujuan jelas dan bisa dioperasikan.</p>
+                    <p>Bidang ini berfokus pada perancangan, pengembangan, dan implementasi perangkat lunak yang berjalan di perangkat bergerak (ponsel pintar, tablet) atau di peramban web (browser).</p>
+                    <h3>Ruang Lingkup Lomba</h3>
+                    <p>Aplikasi Mobile: Bisa berbasis Android (Kotlin/Java, Flutter, React Native) atau iOS (Swift, Flutter, React Native).</p>
+                    <p>Aplikasi Web: Bisa berupa situs web interaktif, platform e-commerce, sistem manajemen sederhana, atau portal informasi. Fokus pada fungsionalitas front-end (tampilan antarmuka) dan back-end (logika di balik layar, database sederhana).</p>
+                    <p>Kriteria Penilaian: Inovasi ide, relevansi masalah yang dipecahkan, fungsionalitas aplikasi, kemudahan penggunaan (user-friendliness), desain antarmuka, dan keberlanjutan solusi.</p>
+                    <h3>Tujuan Lomba</h3>
+                    <p>Mendorong siswa untuk mengidentifikasi masalah dan menciptakan solusi teknologi yang relevan dengan kehidupan sehari-hari mereka.</p>
+                    <p>Mengembangkan keterampilan pemrograman dan logika berpikir dalam merancang sistem.</p>
+                    <p>Meningkatkan kemampuan dalam memahami kebutuhan pengguna dan menerjemahkannya ke dalam produk digital.</p>
+                    <p>Mempersiapkan siswa untuk berkarir di bidang pengembangan perangkat lunak.</p>
                 </div>
 
                 <!-- Penjelasan untuk Game Development -->
-                <div class="explanation-block">
+                <div class="explanation-block" id="game">
                     <h4>Game Development</h4>
                     <h3>Apa itu?</h3>
-                    <p>Kamu suka bikin game? Gimana kalo sekarang kamu yang bikin game sendiri? Di sini, kamu bisa ciptain game dengan karakter unik, karakternya, bikin ceritanya, dan pastinya, program supaya game-nya bisa dimainin.</p>
-                    <h3>Kenapa Ikut Bidang Ini?</h3>
-                    <p>Buat kamu yang ingin belajar merancang dan mengembangkan sebuah game dari nol, mengasah kemampuan problem-solving, dan mengekspresikan kreativitas tanpa batas.</p>
-                    <h3>Apa yang Dikerjain?</h3>
-                    <p>Kamu akan merancang gameplay, membuat aset grafis dan suara, serta menulis kode untuk logika permainan. Dari ide awal sampai game bisa dimainkan, semua proses ada di tanganmu.</p>
+                    <p>Bidang ini melibatkan perancangan, pengembangan, dan pembuatan permainan interaktif, baik itu game digital untuk platform mobile, PC, atau web. Ini menggabungkan elemen pemrograman, seni (grafis, audio), dan penceritaan (storytelling).</p>
+                    <h3>Ruang Lingkup Lomba</h3>
+                    <p>Peserta diharapkan untuk menciptakan game digital yang orisinal dan fungsional. Game dapat memiliki genre yang beragam</p>
+                    <p>o Genre: Edukasi, petualangan, strategi, puzzle, simulasi sederhana, atau arcade. </p>
+                    <p>o Platform: Mobile (Android/iOS), PC (desktop), atau web-based. </p>
+                    <p>o Teknologi: Bisa menggunakan game engine seperti Unity, Godot Engine, Construct 3, atau platform berbasis blok seperti Scratch. Fokus pada mekanisme gameplay, desain level, cerita (jika ada), grafis, dan audio.</p>
+                    <p>o Kriteria Penilaian: Orisinalitas ide, gameplay yang menarik dan seimbang, kualitas visual dan audio, fungsionalitas game, dan potensi edukasi atau hiburan.</p>
+                    <h3>Tujuan Lomba</h3>
+                    <p>o Membangkitkan kreativitas dan imajinasi siswa dalam menciptakan pengalaman interaktif. </p>
+                    <p>o Melatih keterampilan problem-solving dan logika melalui perancangan sistem game. </p>
+                    <p>o Mengenalkan siswa pada proses pengembangan game secara menyeluruh, dari konsep hingga implementasi. </p>
+                    <p>o Membuka wawasan tentang industri game dan berbagai peran di dalamnya. </p>
                 </div>
 
                 <!-- Penjelasan untuk UI/UX Design -->
-                <div class="explanation-block">
+                <div class="explanation-block" id="ui/ux">
                     <h4>UI/UX Design</h4>
                     <h3>Apa itu?</h3>
-                    <p>Ini tentang desain antarmuka aplikasi atau website yang membuat pengguna senang dan mudah menggunakannya. Kamu akan belajar bagaimana membuat tampilan (warna, bentuk, layout) yang menarik dan pengalaman pengguna (kemudahan penggunaan).</p>
-                    <h3>Kenapa Ikut Bidang Ini?</h3>
-                    <p>Untuk kamu yang punya imajinasi dan ingin menciptakan solusi digital yang tidak hanya berfungsi baik tapi juga indah dan menyenangkan untuk digunakan.</p>
+                    <p>UI (User Interface): Berkaitan dengan tampilan visual dan elemen interaktif dari suatu aplikasi atau website (misalnya, tombol, ikon, skema warna, tipografi). Ini adalah apa yang dilihat dan digunakan pengguna. UX (User Experience): Berfokus pada bagaimana pengguna merasa saat berinteraksi dengan suatu produk. Ini mencakup kemudahan penggunaan, efisiensi, dan kepuasan secara keseluruhan.</p>
+                    <h3>Ruang Lingkup Lomba</h3>
+                    <p>Peserta ditantang untuk merancang prototipe atau mockup UI/UX untuk aplikasi mobile atau web yang inovatif dan berpusat pada pengguna. Mereka tidak perlu mengimplementasikan kodenya secara penuh, tetapi fokus pada desain dan konsep.</p>
                     <h3>Apa yang Dikerjain?</h3>
                     <p>Kamu akan membuat wireframe, mockup, dan prototype dari desain aplikasi atau website. Memastikan setiap elemen berfungsi intuitif dan visualnya menarik bagi pengguna.</p>
+                    <p>o Proyek: Desain ulang UI/UX aplikasi yang ada, atau perancangan UI/UX untuk ide aplikasi baru yang memecahkan masalah tertentu.</p>
+                    <p>o Alat: Figma, Adobe XD, Sketch, Canva, atau bahkan sketsa tangan yang rapi dan terstruktur.</p>
+                    <p>o Output: Prototipe interaktif (jika menggunakan alat seperti Figma), wireframe, mockup, user flow, dan presentasi yang menjelaskan alasan di balik setiap keputusan desain.</p>
+                    <p>o Kriteria Penilaian: Orisinalitas ide, kemudahan penggunaan (usability), estetika desain, konsistensi elemen, pemahaman terhadap target pengguna, dan justifikasi keputusan desain.</p>
+                    <h3>Tujuan Lomba</h3>
+                    <p>o Mengembangkan empati siswa terhadap pengguna dan memahami pentingnya desain yang berpusat pada manusia.</p>
+                    <p>o Melatih keterampilan visualisasi dan kreativitas dalam merancang antarmuka yang intuitif dan menarik.</p>
+                    <p>o Mengenalkan siswa pada metodologi desain (misalnya, user research, wireframing, prototyping).</p>
+                    <p>o Mempersiapkan siswa untuk berkarir di bidang desain produk digital.</p>
                 </div>
 
                 <!-- Penjelasan untuk Internet of Things (IoT) -->
-                <div class="explanation-block">
+                <div class="explanation-block" id="iot">
                     <h4>Internet of Thing (IoT)</h4>
                     <h3>Apa itu?</h3>
-                    <p>Ini tentang bagaimana barang-barang di sekitar kita (lampu, kulkas, pintu) bisa terhubung ke internet dan "ngobrol" satu sama lain. Kamu bakal bikin benda-benda ini jadi lebih pintar dan bisa bantu kegiatan kita sehari-hari.</p>
-                    <h3>Kenapa Ikut Bidang Ini?</h3>
-                    <p>Kamu akan belajar tentang integrasi hardware dan software, bagaimana data dikumpulkan dan digunakan, serta bagaimana menciptakan solusi otomatis yang cerdas.</p>
-                    <h3>Apa yang Dikerjain?</h3>
-                    <p>Kamu bakal bikin sistem yang menghubungkan perangkat fisik ke internet. Misalnya, sistem smart home, atau alat monitoring lingkungan yang bisa kamu kontrol dari HP.</p>
+                    <p>IoT adalah konsep di mana objek fisik dilengkapi dengan sensor, perangkat lunak, dan teknologi lainnya untuk terhubung dan bertukar data dengan perangkat dan sistem lain melalui internet. Ini memungkinkan objek untuk 'berbicara' dan melakukan tindakan berdasarkan data yang dikumpulkan. </p>
+                    <h3>Ruang Lingkup Lomba</h3>
+                    <p>Peserta diminta untuk merancang dan membuat prototipe perangkat atau sistem IoT yang memecahkan masalah praktis di lingkungan sekitar mereka (rumah, sekolah, komunitas). </p>
+                    <p>o Contoh Proyek: Sistem irigasi pintar, monitor kualitas udara/air, alat pemantau konsumsi energi, sistem keamanan sederhana (misalnya, pendeteksi gerakan), perangkat otomatisasi rumah/sekolah (lampu otomatis, pembuka gorden pintar), atau solusi kesehatan sederhana yang terhubung.</p>
+                    <p>o Teknologi: Mikrokontroler seperti Arduino, ESP32, atau Raspberry Pi, berbagai jenis sensor (suhu, kelembaban, cahaya, gerak, ultrasonik), aktuator (motor, LED, relay), dan konektivitas (Wi-Fi, Bluetooth).</p>
+                    <p>o Kriteria Penilaian: Inovasi ide, relevansi masalah yang dipecahkan, fungsionalitas prototipe, keandalan sistem, kejelasan implementasi hardware dan software, serta potensi pengembangan lebih lanjut.</p>
+                    <h3>Tujuan Lomba </h3>
+                    <p>o Mendorong siswa untuk berpikir secara interdisipliner, menggabungkan perangkat keras, perangkat lunak, dan konektivitas internet. </p>
+                    <p>o Mengembangkan keterampilan problem-solving di dunia fisik menggunakan teknologi digital.</p>
+                    <p>o Mengenalkan siswa pada konsep dasar elektronika dan pemrograman mikrokontroler. </p>
+                    <p>o Membuka wawasan tentang potensi transformatif IoT dalam berbagai industri dan kehidupan sehari-hari.</p>
                 </div>
 
                 <!-- Penjelasan untuk Artificial Intelligence & Machine Learning -->
-                <div class="explanation-block">
+                <div class="explanation-block" id="ai">
                     <h4>Artificial Intelligence & Machine Learning</h4>
                     <h3>Apa itu?</h3>
-                    <p>Ini tentang bagaimana komputer bisa "belajar" dan berpikir seperti manusia. Kamu bakal ngajarin komputer buat ngerti data, bikin prediksi, atau bahkan kenalin wajah!</p>
-                    <h3>Kenapa Ikut Bidang Ini?</h3>
-                    <p>Ini adalah bidang yang sangat relevan dan terus berkembang, memberikan kamu kemampuan untuk memecahkan masalah kompleks dan menciptakan inovasi yang mengubah dunia.</p>
-                    <h3>Apa yang Dikerjain?</h3>
-                    <p>Kamu akan mengembangkan model AI dan ML, melatihnya dengan data, dan mengaplikasikannya untuk berbagai tujuan seperti pengenalan gambar, pemrosesan bahasa alami, atau sistem rekomendasi.</p>
+                    <p>AI (Akal Imitasi, a.k.a Artificial Intelligence): Kemampuan mesin untuk meniru kemampuan kognitif manusia seperti belajar, penalaran, pemecahan masalah, dan pemahaman bahasa. ML (Machine Learning): Sub-bidang AI yang memungkinkan sistem untuk belajar dari data, mengidentifikasi pola, dan membuat keputusan atau prediksi dengan intervensi manusia minimal. </p>
+                    <h3>Ruang Lingkup Lomba </h3>
+                    <p>Peserta ditantang untuk mengembangkan prototipe atau konsep aplikasi berbasis AI/ML sederhana yang menunjukkan pemahaman tentang prinsip-prinsip dasar AI/ML dan dapat memecahkan masalah tertentu. </p>
+                    <p>o Contoh Proyek: Sistem rekomendasi sederhana (misalnya, rekomendasi buku/film berdasarkan preferensi), pengenalan objek/gambar (misalnya, mengklasifikasikan jenis sampah), chatbot sederhana untuk menjawab pertanyaan spesifik, analisis sentimen teks sederhana, atau prediksi tren data (misalnya, memprediksi cuaca sederhana).</p>
+                    <p>o Teknologi: Bisa menggunakan library ML sederhana (misalnya, scikit-learn di Python, TensorFlow.js untuk web), platform no-code/low-code AI, atau kerangka kerja dasar untuk model AI.</p>
+                    <p>o Kriteria Penilaian: Orisinalitas ide, relevansi masalah yang dipecahkan, demonstrasi konsep AI/ML, kejelasan penjelasan tentang cara kerja model, potensi dampak, dan akurasi (jika berlaku).</p>
+                    <h3>Tujuan Lomba </h3>
+                    <p>o Mengenalkan siswa pada konsep dasar kecerdasan buatan dan pembelajaran mesin yang semakin relevan di masa depan.</p>
+                    <p>o Mendorong pemikiran logis dan analitis dalam memecahkan masalah menggunakan pendekatan berbasis data.</p>
+                    <p>o Mengembangkan keterampilan dalam mengumpulkan, mengolah, dan menganalisis data sederhana untuk "melatih" model.</p>
+                    <p>o Membuka wawasan tentang etika dan potensi dampak AI dalam masyarakat.</p>
                 </div>
             </div>
         </section>
@@ -160,6 +193,7 @@
                 <ul>
                     <li><a href="https://www.instagram.com/fipex.si" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                     <li><a href="https://www.youtube.com/@fipex.si" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+                    <li><a href="http://wa.me/+6283896233318" target="_blank" rel="noopener noreferrer">Contact Person</a></li>
                 </ul>
             </div>
             <div class="footer-right">
@@ -170,5 +204,32 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dapatkan semua elemen dengan kelas 'category-card'
+            const categoryCards = document.querySelectorAll('.category-card');
+
+            categoryCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    const targetId = this.dataset.target; // Dapatkan nilai dari data-target
+                    if (targetId) {
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            // Hitung offset karena fixed navbar
+                            const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                            // Tambahkan sedikit offset tambahan (misal 20px) agar tidak terlalu menempel ke navbar
+                            const offsetPosition = elementPosition - navbarHeight - 20; 
+
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

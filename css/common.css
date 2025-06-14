@@ -19,6 +19,9 @@
 }
 
 /* Base Styles */
+html {
+    scroll-behavior: smooth; /* Membuat scroll ke anchor link menjadi halus */
+}
 * {
     margin: 0;
     padding: 0;

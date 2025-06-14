@@ -1,5 +1,13 @@
 /* YIC Page Specific Styles */
+main {
+        padding-top: 80px;
+    }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 /* YIC Hero Section */
 .yic-hero-section {
     background-color: var(--light-grayish-blue); /* Latar belakang sama dengan hero index.html */
@@ -122,7 +130,7 @@
     /* DIUBAH: Memastikan setiap blok penjelasan mengambil lebar penuh */
     width: 100%;
     margin-bottom: 40px; /* Jarak antar blok yang menumpuk */
-    text-align: left; /* Pastikan teks tetap rata kiri di dalam blok */
+    text-align: justify; /* Pastikan teks tetap rata kiri di dalam blok */
 }
 
 .explanation-block:last-child {
